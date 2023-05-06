@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <h1><center>Module (CSS and CSS 3) -2</center> </h1>
+    <ol>
+            <hr class="hr">
+            <strong>
+                <li>What are the benefits of using CSS? </li>
+            </strong>
+            <p>Ans:- The following are the benefits of CSS :-</p>
+            <dl>
+                <dt>CSS saves time:-</dt>
+                <dd>You can write CSS once and then reuse the same sheet in multiple HTML pages. You can define a style for each HTML element and apply it to as many Web pages as you want.</dd>
+                <dt>Easy maintenance:-</dt>
+                <dd>To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.</dd>
+                <dt>Global web standards:-</dt>
+                <dd>Now HTML attributes are being deprecated and it is being recommended to use CSS. So it's a good idea to start using CSS in all the HTML pages to make them compatible with future browsers</dd>
+                <dt>Platform Independence:-</dt>
+                <dd>The Script offer consistent platform independence and can support latest browsers as well.</dd>
+                </dl>
+                <strong>
+                    <li>What are the disadvantages of CSS?</li>
+                </strong>
+                <p>Ans:- The following are the Disadvantages of CSS :-</p>
+                <dl>
+                    <dt>Confusion due to many CSS levels:-</dt>
+                    <dd>Beginners are more vulnerable to this issue. They might get confused while opting to learn CSS as there are many levels of CSS such as CSS2, CSS3, etc.</dd>
+                    <dt>Cross-Browser Issues:-</dt>
+                    <dd>Different browsers work differently. So, you have to check that changes implemented in the website via CSS codes are reflected properly among all browsers.</dd>
+                    <dt>Security Issues:-</dt>
+                    <dd>Security is important in today’s world driven by technology and data. One of the major disadvantages of CSS is that it has limited security.</dd>
+                    <dt>Extra Work for Developers:-</dt>
+                    <dd>Design services are required to consider and test all CSS codes across different browsers for compatibility. Due to developers testing compatibility for different browsers, their workload increases.</dd>
+                </dl>
+                <strong>
+                    <li>What is the difference between CSS2 and CSS3?</li>
+                </strong>
+                <p>Ans:-The biggest difference between CSS2 and CSS3 is that CSS3 is now split into different modules. Since each module makes its way through the W3C individually, there’s a wider range of browser support. Make sure you test your CSS3 pages in as many browsers and operating systems as possible to ensure compatibility.</p>
+                <strong>
+                    <li>Name a few CSS style components</li>
+                </strong>
+                <p>Ans:-At its most basic level, CSS consists of two components:</p>
+                <ol>
+                    <li>Properties:- These are human-readable identifiers that indicate which stylistic features you want to modify. For example, font-size , width , background-color .</li>
+                    <li>Values:- Each property is assigned a value. This value indicates how to style the property.</li>
+                </ol>
+                <strong>
+                    <li>What do you understand by CSS opacity?</li>
+                </strong>
+                <p>Ans:-The opacity property sets the opacity level for an element.<br>
+                        The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent.
+                </p>
+                <strong>
+                    <li>How can the background color of an element be changed? </li>
+                </strong>
+                <p>Ans:- To add background color in HTML, use the CSS background-color property. Set it to the color name or code you want and place it inside a style attribute. Then add this style attribute to an HTML element, like a table, heading, div, or span tag.</p>
+              <h3>Example:-</h3>
+                <code>
+                <!DOCTYPE html><br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                      body {<br>
+                         background-color: white;<br>
+                      }<br>
+                      &lt;/style&gt;<br>
+                      &lt;h1&gt;HTML Articles&lt;/h1&gt;<br>
+                      &lt;/head&gt;<br>
+                      &lt;body&gt;<br>
+                      &lt;/body&gt;<br>
+                      &lt;/html&gt;<br>
+              </code>
+              <h3>output:-</h3>
+              <code>
+                  <!DOCTYPE html>
+                  <html>
+                <head>
+                  <style>
+             body {
+                background-color: white;
+               }
+            </style>
+            <h1>HTML Articles</h1>
+             </head>
+              <body>
+               </body>
+                    </html>
+              </code>
+              <strong>
+                <li>How can image repetition of the backup be controlled? </li>
+            </strong>
+            <p>Ans:- To control the repetition of an image in the background, use the background-repeat property. You can use no-repeat value for the background-repeat property if you do not want to repeat an image, in this case, the image will display only once.</p>
+            <h3>Example:-</h3>
+            <code>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                &lt;title&gt; background-repeat Property &lt;/title&gt;<br>
+                   body {<br>
+                  background-image: url("C:\Users\erurv\OneDrive\Desktop\images\download.jpeg");<br>
+                 background-repeat: no repeat;<br>
+               /*  background-repeat: repeat;*/<br>
+               }<br>
+               &lt;/style&gt;<br>
+               &lt;/head&gt;<br>
+               &lt;body&gt;<br>
+               &lt;p&gt;HTML Articles&lt;/p&gt;<br>
+               &lt;/body&gt;<br>
+               &lt;/html&gt;<br>
+            </code>
+            <strong>
+                <li>What is the use of the background-position property?  </li>
+            </strong>
+            <p>Ans:- The background-position property sets the starting position of a background image.By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.</p>
+            <h3>Example:-</h3>
+            <code>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt; background-position Property &lt;/title&gt;<br>
+                    &lt;style&gt;<br>
+                       body {<br>
+                      background-image: url("C:\Users\erurv\OneDrive\Desktop\images\download.jpeg");<br>
+                     background-repeat: no repeat;<br>
+                     background-position: left top;<br>
+                     /*  background-position: left center; */<br>
+                     /*  background-position: left bottom; */<br>
+                   /*  background-position: right top; */<br>
+                   /*  background-position: right center; */<br>
+                   /*  background-position: right bottom; */<br>
+                   /*  background-position: center ; */<br>
+                   /*  background-position: center top ; */<br>
+                   /*  background-position: center bottom ; */<br>
+                   }<br>
+                   &lt;/style&gt;<br>
+                   &lt;/head&gt;<br>
+                   &lt;body&gt;<br>
+                   &lt;p&gt;HTML Articles&lt;/p&gt;<br>
+                   &lt;/body&gt;<br>
+                   &lt;/html&gt;<br>
+                </code>
+                <strong>
+                    <li>Which property controls the image scroll in the background?</li>
+                </strong>
+                <p>Ans:-<b>background-attachment property:-</b><br>
+                    The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.
+                </p>
+                <h3>Example:-</h3>
+                  <code>
+
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt; background-position Property &lt;/title&gt;<br>
+                    &lt;style&gt;<br>
+                       #example{<br>
+                      background-image: url("C:\Users\erurv\OneDrive\Desktop\images\download.jpeg");<br>
+                     background-repeat: repeat;<br>
+                     background-position: center;<br>
+                     background-attachment: scroll;<br>
+                   }<br>
+                &lt;/head&gt;<br>
+      
+                &lt;body style="text-align:center"&gt;<br>
+                &lt;h1 style="color:rgb(74, 17, 188)"&gt;background-attachment: scroll &lt;/h1&gt;<br>
+                &lt;div id="example"&gt;<br>
+                &lt;p&gt;<br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                               It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged.  <br>       
+                                &lt; /p&gt;<br> 
+                                &lt;p&gt;<br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                               It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged.  <br>
+                                &lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                  </code>
+
+                  <strong>
+                    <li>Why should background and color be used as separate properties? </li>
+                </strong>
+                <p>Ans:- There are two reasons behind this: </p>
+                    <ol>
+                     <li>It enhances the legibility of style sheets.</li>
+                   <li>The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.</li>
+                    </ol>
+                 
+                    <strong>
+                        <li>How to center block elements using CSS1?  </li>
+                    </strong>
+                    <p>Ans:- By setting the properties margin-left and margin-right to auto and width to some explicit value:</p>
+                    <h3>Example:</h3>
+                    <code>
+                        body {width: 30em; background: green;}<br>
+                         P {width: 22em; margin-left: auto; margin-right: auto} <br>
+                    </code>
+                    <strong>
+                        <li>What are the ways to integrate CSS as a web page?</li>
+                    </strong>
+                    <p>Ans:- There are three ways to integrates css into a webpage</p>
+            <ol>
+             <li><b>Inline:</b>HTML elements may have css appied to them via the STYLE attribute</li>
+             <li><b>Embedded:</b>By placing the code in a STYLE element within the HEAD element</li>
+             <li><b>Linked/Impored:</b>Place the css in an external file and lik it via a link element</li>
+          </ol>
+          <strong>
+            <li>What is embedded style sheets? </li>
+        </strong>
+        <p>Ans:-Place your CSS rules into an HTML document using the &lt;style&gt; element that is called embedded CSS.
+             This tag is placed inside &lt;head&gt;...&lt;/head&gt; tags. Rules defined using this syntax will be applied
+              to all the elements available in the document.</p>
+
+              <strong>
+                <li>What are the external style sheets? </li>
+            </strong>
+            <p>Ans:-An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. 
+                Multiple webpages can use the same link to access the stylesheet.
+                 The link to an external style sheet is placed within the head section of the page.</p>
+                 <h3>Example</h3>
+                 <h4>html:-</h4>
+                 <code>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;link rel="stylesheet" href="Style.css"&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                    &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                 </code>
+
+                 <h4>CSS:-</h4>
+                 <code>
+                        h1 { color: blue; }<br>
+                        p {color: red;}<br>
+                 </code>
+
+                 <strong>
+                    <li>What are the advantages and disadvantages of using external style sheets?  </li>
+                </strong>
+                <p>Ans:-</p>
+                <h3>Advantages of extrenal styel sheet:</h3>
+                <ul>
+                    <li><b>Separation of content and presentation:</b> An external style sheet allows you to separate the content of your website (HTML) from the presentation (CSS).
+                         This makes it easier to maintain and update your website, as you only need to change the style sheet rather than making changes to the HTML of each individual page.</li>
+                    <li><b>Reusable styles:</b>An external style sheet can be reused across multiple pages and websites,
+                            saving time and making it easier to maintain a consistent look and feel.</li>
+                    <li><b>Improved performance:</b>An external style sheet is only loaded once, even if it is used on multiple pages. This can improve the performance of your website,
+                         as the browser does not need to download the same styles repeatedly.</li>
+               </ul>
+               <h3>Disadvantages of extrenal styel sheet:</h3>
+               <ul>
+                <li><b>Additional HTTP request:</b>An external style sheet requires an additional HTTP request to load, 
+                    which can slightly increase the time it takes for the page to render.</li>
+                <li><b>Limited control:</b>With an external style sheet, you have less control over the specific elements on a page,
+                     as the styles are applied globally to all elements that use the same class or ID.</li>  
+                <li><b>Harder to override:</b>It can be harder to override the styles in an external style sheet, as they are applied globally. To override a style, you need to use more specific selectors or use the !important declaration, 
+                    which can make your style sheet more complex and difficult to maintain.</li>
+                    </ul>
+
+                    <strong>
+                        <li>What is the meaning of the CSS selector? </li>
+                    </strong>
+                    <p>Ans:-A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser 
+                        which HTML elements should be selected to have the CSS property values inside the rule applied to them. </p>
+                       
+                        <strong>
+                            <li>What are the media types allowed by CSS? </li>
+                        </strong>
+                        <p>Ans:-Media Types:</p>
+                      <ul>
+                        <li><b>all:</b>Suitable for all devices.</li>
+                        <li><b>print:</b>Matches printers, and devices intended to reproduce a printed display, such as a web browser showing a document in "Print Preview".</li>
+                        <li><b>screen:</b>Matches all devices that aren't matched by print or speech.</li>
+                        <li><b>speech:</b>Matches screenreaders and other devices that read out the content of a page.</li>
+                     </ul>
+                     <strong>
+                        <li>What is the rule set? </li>
+                    </strong>
+                    <p>Ans:-  A table of instructions used by a controlled interface to determine what data is allowable and how the data is handled between interconnected systems.</p>
+                    
+
+ </body>
+</html>
+
+
+
+
